@@ -1,227 +1,597 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ZETA Wiki — Современная, быстрая и безопасная веб-энциклопедия нового поколения.">
-    <meta name="theme-color" content="#090A0F">
-    <title>ZETA Wiki — Современная Энциклопедия</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kompuhtr Shop — Игровые ПК от $199 до $599 | O'yin kompyuterlari</title>
+  <meta name="description" content="Честные игровые компьютеры от 199$ до 599$. Ishonchli o'yin kompyuterlari. Отборные комплектующие, 24 часа стресс-тестов, гарантия. Telegram: @VIGER_YT.">
+  <meta name="keywords" content="kompyuter yig'ish, o'yin kompyuteri, игровой пк, купить пк, дешевый пк, сборка пк, компьютер для cs2, kompuhtr shop, viger_yt, toshkent kompyuter">
+  <meta name="theme-color" content="#060709">
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Kompuhtr Shop — O'yin kompyuterlari / Игровые ПК">
+  <meta property="og:description" content="Maksimal FPS, ortiqcha to'lovlarsiz. Честные сборки для CS2, Dota 2, GTA V и Cyberpunk 2077. Telegram: @VIGER_YT.">
+  <meta property="og:image" content="assets/images/hero.jpg">
+  <meta property="og:type" content="website">
 
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css">
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%2300f0ff'/><path d='M25 75 L45 25 L55 25 L35 75 Z M45 75 L75 25 L85 25 L55 75 Z' fill='%23000'/></svg>">
+
+  <!-- Google Fonts Preconnect & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
 </head>
+<body>
 
-<body class="theme-dark">
-    <!-- Reading Progress Bar -->
-    <div id="reading-progress-bar" class="reading-progress-bar" aria-hidden="true"></div>
+  <!-- ========================================================================
+       TOP NAVIGATION BAR
+       ======================================================================== -->
+  <header class="navbar" id="mainNavbar">
+    <div class="nav-container">
+      <a href="#" class="nav-brand" aria-label="Kompuhtr Shop Главная">
+        <div class="brand-badge">K</div>
+        <div class="brand-title">
+          <span class="brand-name">KOMPUHTR</span>
+          <span class="brand-tag">Custom Builds</span>
+        </div>
+      </a>
 
-    <div class="app-container">
-        <!-- Sidebar Navigation -->
-        <aside class="sidebar" id="sidebar" aria-label="Основная навигация">
-            <div class="sidebar-header">
-                <a href="#home" class="logo" aria-label="На главную ZETA Wiki">
-                    <div class="logo-icon">Z</div>
-                    <span class="logo-text">ZETA<span>Wiki</span></span>
-                </a>
-                <button class="icon-btn sidebar-close-btn" id="sidebar-close-btn" aria-label="Закрыть меню">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <line x1="18" y1="6" x2="6" y2="18"></line>
-                        <line x1="6" y1="6" x2="18" y2="18"></line>
-                    </svg>
-                </button>
-            </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#catalog" id="nav-catalog" class="active">Сборки</a></li>
+          <li><a href="#why-us" id="nav-why-us">Преимущества</a></li>
+          <li><a href="#configurator" id="nav-config">Конфигуратор</a></li>
+          <li><a href="#quality" id="nav-quality">Тесты & Гарантия</a></li>
+          <li><a href="#reviews" id="nav-reviews">Отзывы</a></li>
+          <li><a href="#faq" id="nav-faq">FAQ</a></li>
+        </ul>
+      </nav>
 
-            <nav class="nav-menu" id="nav-menu">
-                <div class="nav-section-label">Разделы</div>
-                <a href="#home" class="nav-link active" data-nav="home">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
-                        <polyline points="9 22 9 12 15 12 15 22" />
-                    </svg>
-                    <span>Главная</span>
-                </a>
-                <a href="#saved" class="nav-link" data-nav="saved">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/>
-                    </svg>
-                    <span>Закладки</span>
-                    <span class="nav-badge" id="bookmarks-count-badge">0</span>
-                </a>
-                <a href="#random" class="nav-link" data-nav="random" id="nav-random-btn">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <rect width="18" height="18" x="3" y="3" rx="2" ry="2"/>
-                        <circle cx="8" cy="8" r="1.5"/>
-                        <circle cx="16" cy="16" r="1.5"/>
-                        <circle cx="12" cy="12" r="1.5"/>
-                    </svg>
-                    <span>Случайная</span>
-                </a>
+      <div class="nav-actions">
+        <!-- Language Switcher UZ / RU -->
+        <div class="lang-selector" title="Tilni tanlash / Выбрать язык">
+          <button class="lang-btn" data-lang="uz">UZ</button>
+          <button class="lang-btn active" data-lang="ru">RU</button>
+        </div>
 
-                <div class="nav-section-label">Категории</div>
-                <a href="#category/Знаменитости" class="nav-link" data-nav="category/Знаменитости">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                        <circle cx="12" cy="7" r="4" />
-                    </svg>
-                    <span>Люди и биографии</span>
-                </a>
-                <a href="#category/Страны" class="nav-link" data-nav="category/Страны">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="10" />
-                        <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
-                        <path d="M2 12h20" />
-                    </svg>
-                    <span>Страны и география</span>
-                </a>
-                <a href="#category/Технологии" class="nav-link" data-nav="category/Технологии">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="4" y="4" width="16" height="16" rx="2" ry="2" />
-                        <rect x="9" y="9" width="6" height="6" />
-                        <line x1="9" y1="1" x2="9" y2="4" />
-                        <line x1="15" y1="1" x2="15" y2="4" />
-                        <line x1="9" y1="20" x2="9" y2="23" />
-                        <line x1="15" y1="20" x2="15" y2="23" />
-                        <line x1="20" y1="9" x2="23" y2="9" />
-                        <line x1="20" y1="14" x2="23" y2="14" />
-                        <line x1="1" y1="9" x2="4" y2="9" />
-                        <line x1="1" y1="14" x2="4" y2="14" />
-                    </svg>
-                    <span>Технологии и IT</span>
-                </a>
-                <a href="#category/Наука" class="nav-link" data-nav="category/Наука">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M10 2v7.31" />
-                        <path d="M14 9.3V1.99" />
-                        <path d="M8.5 2h7" />
-                        <path d="M14 9.3a6.5 6.5 0 1 1-4 0" />
-                        <path d="M5.52 16h12.96" />
-                    </svg>
-                    <span>Наука и космос</span>
-                </a>
-                <a href="#category/История" class="nav-link" data-nav="category/История">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
-                        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
-                    </svg>
-                    <span>История и эпохи</span>
-                </a>
-                <a href="#category/Видеоигры" class="nav-link" data-nav="category/Видеоигры">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="2" y="6" width="20" height="12" rx="2" />
-                        <path d="M6 12h4" />
-                        <path d="M8 10v4" />
-                        <path d="M15 13h.01" />
-                        <path d="M18 11h.01" />
-                    </svg>
-                    <span>Видеоигры</span>
-                </a>
-            </nav>
+        <!-- Currency Picker (Now including UZS so'm) -->
+        <div class="currency-selector" title="Valyutani tanlash / Выбрать валюту">
+          <button class="currency-btn active" data-currency="USD">$ USD</button>
+          <button class="currency-btn" data-currency="UZS">so'm UZS</button>
+          <button class="currency-btn" data-currency="RUB">₽ RUB</button>
+          <button class="currency-btn" data-currency="KZT">₸ KZT</button>
+          <button class="currency-btn" data-currency="EUR">€ EUR</button>
+        </div>
 
-            <div class="sidebar-footer">
-                <a href="#viger" class="dev-badge-link" title="О разработчике">
-                    <div class="dev-avatar-sm">V</div>
-                    <div class="dev-info">
-                        <span class="dev-name">VIGER Dev</span>
-                        <span class="dev-tag">Developer Portal</span>
-                    </div>
-                </a>
-            </div>
-        </aside>
+        <!-- Telegram Action -->
+        <a href="https://t.me/VIGER_YT" target="_blank" rel="noopener noreferrer" class="btn-telegram">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+          <span>@VIGER_YT</span>
+        </a>
+      </div>
+    </div>
+  </header>
 
-        <!-- Sidebar Backdrop for Mobile -->
-        <div class="sidebar-overlay" id="sidebar-overlay" aria-hidden="true"></div>
+  <!-- ========================================================================
+       HERO SECTION (Apple-style Presentation)
+       ======================================================================== -->
+  <section class="hero" id="hero">
+    <div class="hero-glow"></div>
 
-        <!-- Main Workspace -->
-        <main class="main-content">
-            <!-- Top App Header -->
-            <header class="topbar">
-                <div class="topbar-left">
-                    <button class="icon-btn menu-btn" id="mobile-menu-btn" aria-label="Открыть меню навигации">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="3" y1="12" x2="21" y2="12" />
-                            <line x1="3" y1="6" x2="21" y2="6" />
-                            <line x1="3" y1="18" x2="21" y2="18" />
-                        </svg>
-                    </button>
-
-                    <!-- Search Container with Live Suggestions -->
-                    <div class="search-container" id="search-container">
-                        <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="11" cy="11" r="8" />
-                            <path d="m21 21-4.3-4.3" />
-                        </svg>
-                        <form id="search-form" class="search-form" autocomplete="off" onsubmit="return false;">
-                            <input type="text" id="searchInput" class="search-input" placeholder="Поиск в Википедии (нажмите Enter)..." aria-label="Поиск по статьям" autocomplete="off">
-                            <button type="button" id="search-clear-btn" class="search-clear-btn hidden" aria-label="Очистить поиск">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <line x1="18" y1="6" x2="6" y2="18"></line>
-                                    <line x1="6" y1="6" x2="18" y2="18"></line>
-                                </svg>
-                            </button>
-                        </form>
-
-                        <!-- Autocomplete Suggestions Dropdown -->
-                        <div class="search-suggestions-dropdown hidden" id="search-suggestions">
-                            <div class="suggestions-header" id="suggestions-header">Подсказки</div>
-                            <ul class="suggestions-list" id="suggestions-list" role="listbox"></ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="topbar-actions">
-                    <!-- Native Wikipedia Language Switcher -->
-                    <div class="lang-selector-wrapper">
-                        <svg class="lang-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="10"/>
-                            <line x1="2" y1="12" x2="22" y2="12"/>
-                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-                        </svg>
-                        <select id="lang-select" class="lang-select" aria-label="Выбор языка Википедии">
-                            <option value="ru" selected>RU (Русский)</option>
-                            <option value="en">EN (English)</option>
-                            <option value="uz">UZ (Oʻzbekcha)</option>
-                            <option value="de">DE (Deutsch)</option>
-                            <option value="es">ES (Español)</option>
-                            <option value="fr">FR (Français)</option>
-                        </select>
-                    </div>
-
-                    <!-- Theme Switcher -->
-                    <button class="icon-btn theme-toggle-btn" id="theme-toggle-btn" aria-label="Переключить тему оформления" title="Сменить тему">
-                        <!-- Icon swapped via JS -->
-                        <svg class="theme-icon-dark" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="5"/>
-                            <line x1="12" y1="1" x2="12" y2="3"/>
-                            <line x1="12" y1="21" x2="12" y2="23"/>
-                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
-                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
-                            <line x1="1" y1="12" x2="3" y2="12"/>
-                            <line x1="21" y1="12" x2="23" y2="12"/>
-                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
-                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
-                        </svg>
-                    </button>
-                </div>
-            </header>
-
-            <!-- Scrollable Content Viewport -->
-            <div class="content-scroll" id="app-content" tabindex="-1">
-                <!-- Injected via Router in app.js -->
-            </div>
-        </main>
+    <div class="hero-badge">
+      <span class="status-dot"></span>
+      <span id="heroBadgeText">Сборка и стресс-тесты в мастерской • Отправка за 24 часа</span>
     </div>
 
-    <!-- Notification Toast System -->
-    <div id="toast-container" class="toast-container" aria-live="polite"></div>
+    <h1 class="hero-title" id="heroTitle">
+      <span class="gradient-text">Максимум FPS.</span><br>
+      <span class="highlight">Ноль переплат за воздух.</span>
+    </h1>
 
-    <!-- Main Application Logic -->
-    <script src="app.js"></script>
+    <p class="hero-subtitle" id="heroSubtitle">
+      Игровые компьютеры от <strong>199$</strong> до <strong>599$</strong> на самых проверенных и народных комплектующих. 
+      Каждая сборка проходит 24 часа жестких стресс-тестов перед упаковкой.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#catalog" class="btn-primary">
+        <span id="heroBtnCatalog">Смотреть варианты сборок</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#configurator" class="btn-secondary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        <span id="heroBtnConfig">Собрать свой конфиг</span>
+      </a>
+      <button class="btn-secondary" onclick="copyTelegramHandle()">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+        <span id="heroBtnCopyTg">Скопировать Telegram</span>
+      </button>
+    </div>
+
+    <!-- Hero Showcase Frame -->
+    <div class="hero-visual">
+      <img src="assets/images/hero.jpg" alt="Kompuhtr Shop Gaming Rig" loading="eager">
+      <div class="hero-visual-overlay">
+        <div class="hero-stat-pills">
+          <div class="hero-stat-pill">
+            <span class="hero-stat-num">360+ FPS</span>
+            <span class="hero-stat-lbl" id="heroStat1">В киберспорте (CS2, Valorant)</span>
+          </div>
+          <div class="hero-stat-pill">
+            <span class="hero-stat-num">24 ЧАСА</span>
+            <span class="hero-stat-lbl" id="heroStat2">FurMark + OCCT стресс-тесты</span>
+          </div>
+          <div class="hero-stat-pill">
+            <span class="hero-stat-num">0% МУСОРА</span>
+            <span class="hero-stat-lbl" id="heroStat3">Оптимизированная Windows 11 Pro</span>
+          </div>
+        </div>
+
+        <a href="https://t.me/VIGER_YT" target="_blank" rel="noopener noreferrer" class="btn-primary" style="padding: 10px 22px; font-size: 0.88rem;">
+          <span id="heroBtnAskTg">Задать вопрос в TG</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       ADVANTAGES / WHY KOMPUHTR SHOP
+       ======================================================================== -->
+  <section class="section" id="why-us">
+    <div class="section-header">
+      <span class="section-tag" id="whyUsTag">Честный подход</span>
+      <h2 class="section-title" id="whyUsTitle">Почему покупают у нас, а не в сетевых гигантах?</h2>
+      <p class="section-desc" id="whyUsDesc">
+        В сетевых магазинах вы платите 40–50% за аренду торговых центров и зарплату консультантов. 
+        У нас — только железо высшей пробы, ручная сборка мастером и стресс-тестирование каждого разъема.
+      </p>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">💎</div>
+        <h3 class="feature-title" id="f1Title">Народные хиты без переплат</h3>
+        <p class="feature-desc" id="f1Desc">
+          Мы отбираем самые выгодные процессоры (Xeon E5, Ryzen 5 2600/3600/5600) и видеокарты (RX 580, GTX 1660S, RTX 2060S, RTX 3060), где каждый цент дает максимальный FPS.
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">🔥</div>
+        <h3 class="feature-title" id="f2Title">24 часа стресс-тестов</h3>
+        <p class="feature-desc" id="f2Desc">
+          Каждый системный блок проходит непрерывный прогрев в FurMark, Prime95 и MemTest86. Никаких внезапных синих экранов или отвалов чипа.
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">❄️</div>
+        <h3 class="feature-title" id="f3Title">Премиум термоинтерфейс</h3>
+        <p class="feature-desc" id="f3Desc">
+          Используем фазовый переход Honeywell PTM7950 и оригинальную термопасту Arctic MX-4. Температуры в играх до 10-15°C ниже, чем в магазинных сборках.
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">✨</div>
+        <h3 class="feature-title" id="f4Title">Кабель-менеджмент арт-класса</h3>
+        <p class="feature-desc" id="f4Desc">
+          Все провода проложены потайными каналами и зафиксированы нейлоновыми стяжками. Идеальный продув корпуса, полное отсутствие пылевых карманов.
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">⚡</div>
+        <h3 class="feature-title" id="f5Title">Чистая Windows 11 Pro</h3>
+        <p class="feature-desc" id="f5Desc">
+          Установлена чистая Windows 11 Pro без телеметрии и предустановленного мусора. Настроен XMP профиль памяти, включен Resizable BAR, обновлен BIOS.
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">🛡️</div>
+        <h3 class="feature-title" id="f6Title">Прямая гарантия мастера</h3>
+        <p class="feature-desc" id="f6Desc">
+          Гарантия от 6 до 24 месяцев с официальным гарантийным талоном. Вы общаетесь напрямую со мной в Telegram @VIGER_YT без бюрократии сервисных центров.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       PRODUCTS CATALOG SECTION WITH DYNAMIC GAME BENCHMARKS
+       ======================================================================== -->
+  <section class="section" id="catalog">
+    <div class="section-header">
+      <span class="section-tag" id="catalogTag">Каталог 2026</span>
+      <h2 class="section-title" id="catalogTitle">Готовые конфигурации в наличии</h2>
+      <p class="section-desc" id="catalogDesc">
+        От супербюджетного бойца за 199$ до панорамного 2K монстра за 599$. 
+        Выберите игру в селекторе ниже, чтобы увидеть реальный средний FPS на мониторе.
+      </p>
+    </div>
+
+    <!-- Catalog Control Bar -->
+    <div class="catalog-nav">
+      <!-- Filter pills -->
+      <div class="catalog-filters">
+        <button class="filter-btn active" data-category="all" id="filterAll">Все сборки</button>
+        <button class="filter-btn" data-category="budget" id="filterBudget">Бюджетные ($199–$249)</button>
+        <button class="filter-btn" data-category="popular" id="filterPopular">Хиты ($329–$429)</button>
+        <button class="filter-btn" data-category="ultra" id="filterUltra">Флагманы 2K ($599)</button>
+      </div>
+
+      <!-- Live Game FPS Benchmark Switcher -->
+      <div class="benchmark-switch-wrap">
+        <span class="benchmark-label" id="benchLabel">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="20" height="12" rx="2"></rect><circle cx="6" cy="12" r="1"></circle><circle cx="10" cy="12" r="1"></circle><line x1="16" y1="10" x2="16" y2="10.01"></line><line x1="18" y1="12" x2="18" y2="12.01"></line></svg>
+          Тест в игре:
+        </span>
+        <select id="gameSelect" class="game-select" aria-label="Выбор игры для теста FPS">
+          <option value="cs2">Counter-Strike 2</option>
+          <option value="dota2">Dota 2</option>
+          <option value="gta5">GTA V</option>
+          <option value="valorant">Valorant</option>
+          <option value="cyberpunk">Cyberpunk 2077</option>
+          <option value="warzone">Warzone 2.0</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Dynamic Grid injected by app.js -->
+    <div class="products-grid" id="productsGrid">
+      <!-- Injected via JavaScript -->
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       INTERACTIVE PC CONFIGURATOR & PROFIT / UPGRADE CALCULATOR
+       ======================================================================== -->
+  <section class="section" id="configurator">
+    <div class="section-header">
+      <span class="section-tag" id="configTag">Кастом под ключ</span>
+      <h2 class="section-title" id="configTitle">Интерактивный конфигуратор апгрейдов</h2>
+      <p class="section-desc" id="configDesc">
+        Хотите добавить больше памяти, установить сверхбыстрый Wi-Fi 6 адаптер или кастомную оплетку кабелей? 
+        Настройте конфигурацию онлайн и получите точную цену за 1 секунду.
+      </p>
+    </div>
+
+    <div class="configurator-wrapper">
+      <div class="configurator-grid">
+        <!-- Steps selection -->
+        <div class="config-steps">
+          <!-- Step 1: Base Model -->
+          <div class="config-step-title">
+            <span class="config-step-num">1</span>
+            <span id="configStep1">Выберите базовую основу:</span>
+          </div>
+          <div class="base-models-list" id="configBaseList">
+            <!-- Injected via JS -->
+          </div>
+
+          <!-- Step 2: Add-ons -->
+          <div class="config-step-title" style="margin-top: 28px;">
+            <span class="config-step-num">2</span>
+            <span id="configStep2">Дополнительные опции и периферия:</span>
+          </div>
+          <div class="addons-grid" id="configAddonsList">
+            <!-- Injected via JS -->
+          </div>
+        </div>
+
+        <!-- Sticky Live Summary -->
+        <div class="config-summary-box">
+          <div class="summary-header">
+            <h3 class="summary-title" id="configSummaryTitle">Ваша индивидуальная сборка</h3>
+            <span class="summary-sub" id="configSummarySub">Включает бесплатную настройку и стресс-тесты</span>
+          </div>
+
+          <div class="summary-items" id="configSummaryItems">
+            <!-- Summary rows via JS -->
+          </div>
+
+          <div class="summary-row total-row">
+            <span id="configTotalLabel">Итоговая стоимость:</span>
+            <span class="summary-total-price" id="configTotalPrice">$344</span>
+          </div>
+
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn-config-order" id="configTgOrderBtn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+            <span id="configTgOrderBtnText">Заказать сборку в Telegram</span>
+          </a>
+
+          <p style="font-size: 0.76rem; color: var(--text-muted); text-align: center; margin: 0;" id="configNote">
+            Менеджер ответит в течение 5–15 минут, уточнит детали доставки и пришлет видеоотчет о сборке.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       QUALITY ASSURANCE & TESTING RIGOR
+       ======================================================================== -->
+  <section class="section" id="quality">
+    <div class="section-header">
+      <span class="section-tag" id="qaTag">Стандарты качества</span>
+      <h2 class="section-title" id="qaTitle">Как тестируется каждый системный блок</h2>
+      <p class="section-desc" id="qaDesc">
+        Мы не отправляем компьютеры «на авось». Каждый ПК проходит 4-уровневый лабораторный стресс-тест.
+      </p>
+    </div>
+
+    <div class="qa-grid">
+      <div class="qa-item">
+        <span class="qa-badge">ТЕСТ №1</span>
+        <h4 class="qa-title" id="qa1Title">OCCT & Linpack</h4>
+        <p class="qa-desc" id="qa1Desc">
+          Проверка цепей питания VRM материнской платы и процессора под пиковой нагрузкой AVX-инструкций. Исключены микрофризы.
+        </p>
+      </div>
+
+      <div class="qa-item">
+        <span class="qa-badge">ТЕСТ №2</span>
+        <h4 class="qa-title" id="qa2Title">FurMark + 3DMark</h4>
+        <p class="qa-desc" id="qa2Desc">
+          Видеокарта прогревается в замкнутом цикле минимум 2 часа. Проверяются обороты кулеров, шум дросселей и температура видеопамяти VRAM.
+        </p>
+      </div>
+
+      <div class="qa-item">
+        <span class="qa-badge">ТЕСТ №3</span>
+        <h4 class="qa-title" id="qa3Title">MemTest86 DDR4</h4>
+        <p class="qa-desc" id="qa3Desc">
+          Каждый модуль памяти проверяется на ошибки при активном XMP-профиле. Никаких вылетов из игр на рабочий стол.
+        </p>
+      </div>
+
+      <div class="qa-item">
+        <span class="qa-badge">ТЕСТ №4</span>
+        <h4 class="qa-title" id="qa4Title">Антиударная упаковка</h4>
+        <p class="qa-desc" id="qa4Desc">
+          Внутрь корпуса устанавливается специальный надувной демпфер Instapak, фиксирующий тяжелую видеокарту при транспортировке.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       REVIEWS & REAL MARKETPLACE TRUST
+       ======================================================================== -->
+  <section class="section" id="reviews">
+    <div class="section-header">
+      <span class="section-tag" id="reviewsTag">Отзывы клиентов</span>
+      <h2 class="section-title" id="reviewsTitle">Что говорят реальные покупатели</h2>
+      <p class="section-desc" id="reviewsDesc">
+        Более 140 довольных игроков по всей стране. Читайте честные отзывы тех, кто уже забрал свой Kompuhtr.
+      </p>
+    </div>
+
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="review-top">
+          <div class="reviewer-info">
+            <div class="reviewer-avatar">ДМ</div>
+            <div>
+              <div class="reviewer-name" id="r1Name">Дмитрий М.</div>
+              <div class="reviewer-model" id="r1Model">Сборка Kompuhtr ADVANCED ($329)</div>
+            </div>
+          </div>
+          <div class="stars">★★★★★</div>
+        </div>
+        <p class="review-text" id="r1Text">
+          «Взял сборку за 329$ с RTX 2060 Super и Ryzen. В CS2 на средних выдает стабильные 220 кадров, Cyberpunk на высоких с DLSS идет очень плавно! Провода уложены просто идеально, в магазине за такое берут в полтора раза больше. Спасибо @VIGER_YT!»
+        </p>
+        <div class="review-footer">
+          <span class="verified-tag" id="r1Verified">✓ Проверенный покупатель</span>
+          <span id="r1Time">3 дня назад</span>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-top">
+          <div class="reviewer-info">
+            <div class="reviewer-avatar">АВ</div>
+            <div>
+              <div class="reviewer-name" id="r2Name">Артем В.</div>
+              <div class="reviewer-model" id="r2Model">Сборка Kompuhtr START ($199)</div>
+            </div>
+          </div>
+          <div class="stars">★★★★★</div>
+        </div>
+        <p class="review-text" id="r2Text">
+          «Искал сыну ПК строго до 200$. Думал, что за эти деньги сейчас только печатную машинку купишь. В итоге забрали Start на RX 580: Дота и Танки летают на ультрах, в CS2 120 FPS есть. Очень доволен, отправили СДЭКом в день заказа!»
+        </p>
+        <div class="review-footer">
+          <span class="verified-tag" id="r2Verified">✓ Проверенный покупатель</span>
+          <span id="r2Time">Неделю назад</span>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-top">
+          <div class="reviewer-info">
+            <div class="reviewer-avatar">ИК</div>
+            <div>
+              <div class="reviewer-name" id="r3Name">Илья К.</div>
+              <div class="reviewer-model" id="r3Model">Сборка Kompuhtr ULTRA ($599)</div>
+            </div>
+          </div>
+          <div class="stars">★★★★★</div>
+        </div>
+        <p class="review-text" id="r3Text">
+          «Аквариумный корпус в жизни выглядит просто бомбически, как в зарубежных сетапах на Reddit! 12GB у RTX 3060 спасают в 2K разрешении, все летает. Температуры в FurMark всего 62 градуса. Отдельный респект за быстрые ответы в телеграме.»
+        </p>
+        <div class="review-footer">
+          <span class="verified-tag" id="r3Verified">✓ Проверенный покупатель</span>
+          <span id="r3Time">12 дней назад</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FAQ ACCORDION
+       ======================================================================== -->
+  <section class="section" id="faq">
+    <div class="section-header">
+      <span class="section-tag" id="faqTag">База знаний</span>
+      <h2 class="section-title" id="faqTitle">Часто задаваемые вопросы</h2>
+      <p class="section-desc" id="faqDesc">
+        Честные ответы на самые частые вопросы перед покупкой.
+      </p>
+    </div>
+
+    <div class="faq-container">
+      <div class="faq-item">
+        <button class="faq-question">
+          <span id="faqQ1">Новые ли детали используются в сборках?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer" id="faqA1">
+          Все накопители (SSD NVMe), кулеры, оперативная память, корпуса и блоки питания — 100% абсолютно новые с завода в заводских пленках. Видеокарты и процессоры проходят строжайший отбор, полный репастинг оригинальными термоинтерфейсами и многочасовые тесты под нагрузкой.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span id="faqQ2">Как происходит доставка и упаковка?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer" id="faqA2">
+          Отправляем через СДЭК, Почту России, Boxberry, Авито Доставку или службы доставки по СНГ. Компьютер упаковывается в плотную заводскую коробку с пенопластом, а видеокарта внутри фиксируется специальным амортизирующим пакетом. Возможен самовывоз и личная проверка.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span id="faqQ3">Как связаться и заказать понравившийся компьютер?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer" id="faqA3">
+          Напишите напрямую мастеру в Telegram: <strong>@VIGER_YT</strong>. Вы можете нажать кнопку «Заказать» на любой карточке товара — сформируется готовое сообщение с названием сборки и ценой.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span id="faqQ4">Компьютер готов к работе сразу из коробки?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer" id="faqA4">
+          Да, на 100%! Мы устанавливаем чистую активированную Windows 11 Pro, все необходимые драйверы, библиотеки DirectX/Visual C++, а также настраиваем профили памяти в BIOS. Вам нужно только подключить монитор и воткнуть вилку в розетку.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span id="faqQ5">Что если мне нужна другая конфигурация или цвет корпуса?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer" id="faqA5">
+          Без проблем! Напишите в Telegram <strong>@VIGER_YT</strong> ваши пожелания: можем собрать ПК в белом цвете, добавить водяное охлаждение, установить больше дискового пространства или другой процессор.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       BANNER CTA / CONTACT TELEGRAM
+       ======================================================================== -->
+  <section class="section" style="padding-top: 20px;">
+    <div class="cta-banner">
+      <div class="cta-banner-content">
+        <span class="section-tag" id="ctaTag" style="color: #fff;">Готовы к новому уровню игры?</span>
+        <h2 class="cta-banner-title" id="ctaTitle">Закажите ваш Kompuhtr прямо сейчас</h2>
+        <p class="cta-banner-desc" id="ctaDesc">
+          Напишите в Telegram <strong>@VIGER_YT</strong>. Ответим на любые технические вопросы, снимем видео работы конкретного системника и согласуем быструю доставку.
+        </p>
+
+        <div class="cta-buttons">
+          <a href="https://t.me/VIGER_YT" target="_blank" rel="noopener noreferrer" class="btn-tg-huge">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+            <span id="ctaBtnTg">Написать в Telegram @VIGER_YT</span>
+          </a>
+
+          <button class="btn-copy-tg" onclick="copyTelegramHandle()">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            <span id="ctaBtnCopy">Скопировать логин</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div>
+          <div class="nav-brand">
+            <div class="brand-badge">K</div>
+            <div class="brand-title">
+              <span class="brand-name">KOMPUHTR SHOP</span>
+              <span class="brand-tag">Custom Builds 2026</span>
+            </div>
+          </div>
+          <p class="footer-desc" id="footerDesc">
+            Мастерская производительных игровых систем по справедливой цене. Честные тесты, проверенные компоненты и гарантия качества.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title" id="footerCol1Title">Быстрые ссылки</h4>
+          <ul class="footer-links">
+            <li><a href="#catalog">Каталог сборок</a></li>
+            <li><a href="#configurator">Конфигуратор</a></li>
+            <li><a href="#why-us">Почему мы</a></li>
+            <li><a href="#quality">Стандарты тестов</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title" id="footerCol2Title">Связь с нами</h4>
+          <ul class="footer-links">
+            <li><a href="https://t.me/VIGER_YT" target="_blank" rel="noopener noreferrer">Telegram: @VIGER_YT</a></li>
+            <li><a href="javascript:void(0)" onclick="copyTelegramHandle()" id="footerCopyContact">Скопировать контакт</a></li>
+            <li style="color: var(--accent-emerald);" id="footerSchedule">Онлайн: 09:00 — 23:00 ежедневно</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span id="footerRights">© 2026 Kompuhtr Shop. Все права защищены.</span>
+        <span id="footerLove">Сделано для игроков с любовью к железу.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       MODAL: FULL SPECS BREAKDOWN
+       ======================================================================== -->
+  <div class="modal-backdrop" id="detailsModal" role="dialog" aria-modal="true" aria-label="Характеристики сборки">
+    <div class="modal-box">
+      <button class="modal-close-btn" onclick="closeDetailsModal()" aria-label="Закрыть">✕</button>
+      <div id="modalBody">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Telegram Contact Pill -->
+  <a href="https://t.me/VIGER_YT" target="_blank" rel="noopener noreferrer" class="floating-tg-button" title="Telegram: @VIGER_YT">
+    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+    <span id="floatingTgText">Написать в Telegram</span>
+  </a>
+
+  <!-- JavaScript -->
+  <script src="app.js"></script>
 </body>
-
 </html>
